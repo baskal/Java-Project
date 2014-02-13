@@ -3,6 +3,7 @@
  */
 
 
+import Math_problems.CheckingTheInput;
 import Math_problems.Circle;
 import Math_problems.Set_of_equations;
 import Math_problems.Triangle;
@@ -16,9 +17,11 @@ class Math {
         //s.getSolution();
         //Quadratic q = new Quadratic(10, 2, 1);
         //q.getSolution();
-        Triangle t = new Triangle(3., 0.1, 5.);
-        t.isRight();
+        //Triangle t = new Triangle(3., 0.1, 5.);
+        //t.isRight();
         //System.out.print(c.getArea());
+        CheckingTheInput ch = new CheckingTheInput(123);
+        ch.checkNumber();
 
     }
 
