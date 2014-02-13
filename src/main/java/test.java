@@ -3,25 +3,20 @@
  */
 
 
-import Math_problems.CheckingTheInput;
-import Math_problems.Circle;
-import Math_problems.Set_of_equations;
-import Math_problems.Triangle;
+import math.utilite.CheckingTheInput;
 
 class Math {
 
     public static void main(String[] args) {
         //Circle c = new Circle(-5);
         //c.getPerimeter();
-        //Set_of_equations s = new Set_of_equations();
+        //SetOfEquations s = new SetOfEquations();
         //s.getSolution();
         //Quadratic q = new Quadratic(10, 2, 1);
         //q.getSolution();
         //Triangle t = new Triangle(3., 0.1, 5.);
         //t.isRight();
         //System.out.print(c.getArea());
-        CheckingTheInput ch = new CheckingTheInput(123);
-        ch.checkNumber();
 
     }
 
