@@ -1,6 +1,12 @@
 package com.gd.math.utils;
 
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+import org.junit.runners.Parameterized.Parameters;
+
+import java.util.Arrays;
+import java.util.Collection;
 
 import static com.gd.math.utils.CheckingTheInput.*;
 import static org.junit.Assert.assertFalse;
@@ -29,6 +35,7 @@ public class ChekingTheInputTest {
         assertTrue(result);
     }
 
+    /*
     @Test
     public void testIsEMail2() {
         boolean result = isEMail("login..123@gmail.com");
@@ -58,8 +65,29 @@ public class ChekingTheInputTest {
         boolean result = isEMail("");
         assertFalse(result);
     }
+    */
+
+
+    @RunWith(Parameterized.class)
+    public static class MyParameterizedClassTest {
+        private String s;
+        public MyParameterizedClassTest(String testParameter) {
+            this.s = testParameter;
+        }
+
+    @Parameters
+    public static Collection<Object[]> data() {
+        Object[][] data = new Object[][] { {"login..123@gmail.com"}, {"login.gmail.com"}, {"login@gmail.c"}, {"login@gmail.123"}, {""} };
+        return Arrays.asList(data);
+        }
 
     @Test
+    public void testMultiplyException() {
+        assertFalse(isEMail(s));
+        }
+    }
+
+        @Test
     public void testIsUsername1() {
         boolean result = isUsername("username_1");
         assertTrue(result);
