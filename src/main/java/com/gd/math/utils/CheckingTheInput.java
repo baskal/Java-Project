@@ -24,8 +24,4 @@ public class CheckingTheInput {
         return matcher.matches();
     }
 
-    public static void main(String [] args){
-        System.out.println(isUsername("2387"));
-
-    }
 }
