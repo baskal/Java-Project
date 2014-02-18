@@ -1,13 +1,12 @@
 package com.gd.math.utils;
 
-import java.util.Arrays;
 
 /**
  * Created by dbaskal on 2/13/14.
  */
 public class SetOfEquations {
 
-    public static Object getSolutionOfSet(double a1, double b1, double c1, double a2, double b2, double c2) {
+    public static Result getSolutionOfSet(double a1, double b1, double c1, double a2, double b2, double c2) {
         Double x1;
         Double x2;
         double dd = a1 * b2 - a2 * b1;
@@ -19,16 +18,13 @@ public class SetOfEquations {
         if (d!=0) {
             x1 = d1 / d;
             x2 = d2 / d;
-            double [] x = new double[2];
-            x[0] = Math.round(1000.0 * x1) / 1000.0;
-            x[1] = Math.round(1000.0 * x2) / 1000.0;
-            return Arrays.toString(x);
+            Double x11 = Math.round(1000.0 * x1) / 1000.0;
+            Double x22 = Math.round(1000.0 * x2) / 1000.0;
+            Result result = new Result(x11, x22);
+            return result;
         }
         else {
-            if (c1 == c2 && c1 == 0)
-                throw new IllegalArgumentException("The set has infinity number of solutions");
-            else
-                throw new IllegalArgumentException("The set has not a solution");
+            return null;
         }
     }
 }

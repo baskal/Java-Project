@@ -1,0 +1,9 @@
+<suite name="My suite">
+    <parameter name="login"  value="login..123@gmail.com"/>
+    <parameter name="login"  value="login.gmail.com"/>
+    <parameter name="login"  value="login@gmail.c"/>
+    <parameter name="login"  value="login@gmail.123"/>
+    <parameter name="login"  value=""/>
+    <test name="testEMail2"/>
+</suite>
+

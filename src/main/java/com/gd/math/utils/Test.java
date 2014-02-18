@@ -1,13 +1,5 @@
 package com.gd.math.utils;
 
-import static com.gd.math.utils.CheckingTheInput.*;
-import static com.gd.math.utils.Circle.getArea;
-import static com.gd.math.utils.Circle.getPerimeter;
-import static com.gd.math.utils.Quadratic.getSolution;
-import static com.gd.math.utils.SetOfEquations.getSolutionOfSet;
-import static com.gd.math.utils.Triangle.isRegular;
-import static com.gd.math.utils.Triangle.isRight;
-
 /**
  * Created by dbaskal on 2/14/14.
  */
