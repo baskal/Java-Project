@@ -7,16 +7,17 @@ package com.gd.math.utils;
 public class Circle {
 
     public static double getArea(double R) {
-        if (R <= 0)
-            throw new IllegalArgumentException("Radius must be positive");
-        else
-            return Math.PI * Math.pow(R, 2);
+        isRPositive(R);
+        return Math.PI * Math.pow(R, 2);
     }
 
     public static double getPerimeter(double R) {
+        isRPositive(R);
+        return 2 * Math.PI * R;
+    }
+
+    private static void isRPositive(double R) {
         if (R <= 0)
             throw new IllegalArgumentException("Radius must be positive");
-        else
-            return 2 * Math.PI * R;
     }
 }

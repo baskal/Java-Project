@@ -13,7 +13,8 @@ public class CheckingTheInput {
     }
 
     public static boolean isEMail(String s) {
-        Pattern p = Pattern.compile("^[_A-Za-z0-9-]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$");
+        Pattern p = Pattern.compile("^[_A-Za-z0-9-]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9]+(\\.[A-Za-z0-9]+)*" +
+                "(\\.[A-Za-z]{2,})$");
         Matcher matcher = p.matcher(s);
         return matcher.matches();
     }

@@ -2,9 +2,6 @@ package testng.com.gd.math.utils;
 
 import org.testng.annotations.*;
 
-import java.util.Arrays;
-import java.util.Collection;
-
 import static com.gd.math.utils.CheckingTheInput.*;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
@@ -12,6 +9,7 @@ import static org.junit.Assert.assertTrue;
 /**
  * Created by dbaskal on 2/17/14.
  */
+
 public class ChekingTheInputTest {
 
     @Test
@@ -48,13 +46,6 @@ public class ChekingTheInputTest {
         boolean result = isEMail(s);
         assertFalse(result);
     }
-
-    /*@Parameters({"login"})
-    @Test
-    public void testEMail2(String login) {
-        boolean result = isEMail(login);
-        assertFalse(result);
-    }*/
 
     @Test
     public void testIsUsername1() {

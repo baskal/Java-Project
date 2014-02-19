@@ -19,17 +19,23 @@ public class TriangleTest {
 
     @Test
     public void testIsRight2() {
+        boolean result = isRight(5, 4, 3);
+        assertTrue(result);
+    }
+
+    @Test
+    public void testIsRight3() {
         boolean result = isRight(3, 4, 2);
         assertFalse(result);
     }
 
     @Test(expected = IllegalArgumentException.class)
-    public void testIsRight3() {
-            isRight(3, -4, -2);
+    public void testIsRight4() {
+        isRight(3, -4, -2);
     }
 
     @Test(expected = IllegalArgumentException.class)
-    public void testIsRight4() {
+    public void testIsRight5() {
         isRight(3, 4, 9);
     }
 

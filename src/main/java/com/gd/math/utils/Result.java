@@ -7,11 +7,6 @@ public class Result {
     private Double x1;
     private Double x2;
 
-    /*public Result() {
-        this.x1 = x;
-        this.x2 = x;
-    }*/
-
     public Result(Double x1, Double x2) {
         this.x1 = x1;
         this.x2 = x2;
